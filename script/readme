@@ -1,0 +1,10 @@
+# Criado diferentes scripts para processamento de dados LiDAR
+
+# emergentFusion.bat é um autoexecutavel com linhas de comando Fusion, do qual extrai as alturas das árvores em uma nuvem de pontos LiDAR
+
+# splanc.R são linhas de comando R para calcular o percentil 95 para as árvores de maior altura. Usa o pacote "splancs"
+# Em seguida calcular o padrão de distribuição espacial com K de Ripley. Usa extenção maximo e minimo de X e Y para criar o poligono
+
+# splancGrandesExtencoes.R é o script R modificado para grandes areas. Divide a área em relação a amplitude de X e Y e calcula o K de Ripley.
+
+# stats.R é o calculo de K de Ripley pelo pacote "spatstat" com os poligono definido pelos valores maximo e minimo de X e Y
